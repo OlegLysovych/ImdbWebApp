@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Input Details</title>
+</head>
+<body>
+    <div>
+        <h3>Form inputing details</h3>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.MovieId" name="MovieId" />
+            <table>
+                <tr>
+                    <td><p>Set Genre of this movie </p></td>
+                    <td><input type="text" name="Name" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Set Actors :</p></td>
+                    <td>
+                        <p>Second Name :</p>
+                        <input type="text" name="SecondName" />
+                    </td>
+                    <td>
+                        <p>First Name :</p>
+                        <input type="text" name="FirstName" />
+                    </td>
+                    <td>
+                        <p>Gender :</p>
+                        <input type="text" name="Gender" />
+                    </td>
+                    <td>
+                        <p>Age :</p>
+                        <input type="text" name="Age" />
+                    </td>
+                </tr>
+                <tr><td><input type="submit" value="Submit" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

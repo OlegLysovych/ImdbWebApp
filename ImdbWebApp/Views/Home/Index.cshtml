@@ -1,0 +1,35 @@
+﻿@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name=" viewport" content="width=device-width"/>
+    <title>Internet Movie Database</title>
+</head>
+<body>
+    <div>
+        <h3>Перелік фільмів</h3>
+        <table>
+            <tr>
+                <td><p>Tittle</p></td>
+                <td><p>Movie Year</p></td>
+                <td><p>Description</p></td>
+                <td><p>Run Time</p></td>
+            </tr>
+            @foreach (var m in ViewBag.Movies)
+            {
+                <tr>
+                    <td><p>@m.Tittle</p></td>
+                    <td><p>@m.MovieYear</p></td>
+                    <td><p>@m.Description</p></td>
+                    <td><p>@m.RunTime</p></td>
+                    <td><p><a href="/Home/Details/@m.MovieId">Details</a></p></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
